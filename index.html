@@ -1,88 +1,92 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>健康資訊網</title>
-  <style>
-    /* 設定全站基準大小為 16px */
-    html {
-      font-size: 16px;
-    }
-
-    body {
-      font-family: system-ui, -apple-system, sans-serif;
-      padding: 2rem;
-      background-color: #121212;
-      color: #e0e0e0;
-    }
-
-    .main-title {
-      font-size: 2rem; /* 相當於 32px */
-    }
-
-    .content-text {
-      font-size: 1rem; /* 相當於 16px */
-      margin-bottom: 1.5rem;
-    }
-
-    /* 使用 CSS Grid 建立 5 個對齊欄位 */
-    .resource-grid {
-      display: grid;
-      grid-template-columns: minmax(265px, 265px) 40px minmax(180px, max-content) 120px minmax(380px, max-content);
-      align-items: center;
-      row-gap: 0.6rem;
-    }
-
-    .resource-grid a {
-      font-size: 12px;
-      color: #8ab4f8; /* 調整為清晰的連結顏色 */
-      text-decoration: none;
-    }
-
-    .resource-grid a:hover {
-      text-decoration: underline;
-    }
-
-    .dot {
-      display : inline-block;
-      width: 20px;
-      height: 25px;
-      background-color: #0000;
-      border-radius: 50%;
-      text-align: center;
-      color: #888;
-    }
-
-    .custom-line {
-      display: block;
-    margin-before: 0.5em;
-    margin-after: 0.5em;
-    margin-start: auto;
-    margin-end: auto;
-    border-style: inset;
-    border-width: 1px;
-    }
-
-    /* 加上簡單的 CSS 讓邊框與間距更美觀 */
-    table {
-    width: 100%;
-    border-collapse: collapse; /* 讓相鄰邊框合併成單一線條 */
-    margin: 20px 0;
-    }
-    th, td {
-      border: 1px solid #333; /* 設定黑色細邊框 */
-      padding: 10px;          /* 設定文字與邊框的內距 */
-      text-align: left;       /* 文字靠左對齊 */
-      font-size: 12px;
-    }
-    th {
-      background-color: #f2f2f2; /* 表頭加上淺灰色底色 */
-      text-align: center;       /* 文字左右（水平）置中 */
-      vertical-align: middle;   /* 文字上下（垂直）置中 */
-    }
-  </style>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>金融資訊網</title>
+    <style>
+      /* 設定全站基準大小為 16px */
+      html {
+        font-size: 16px;
+      }
+  
+      body {
+        font-family: system-ui, -apple-system, sans-serif;
+        padding: 2rem;
+        background-color: #121212;
+        color: #e0e0e0;
+      }
+  
+      .main-title {
+        font-size: 2rem; /* 相當於 32px */
+      }
+  
+      .content-text {
+        font-size: 1rem; /* 相當於 16px */
+        margin-bottom: 1.5rem;
+      }
+  
+      /* 使用 CSS Grid 建立 5 個對齊欄位 */
+      .resource-grid {
+        display: grid;
+        grid-template-columns: 285px 40px 255px 40px minmax(100px, max-content);
+        align-items: center;
+        row-gap: 0.6rem;
+      }
+  
+      .resource-grid a {
+        font-size: 12px;
+        color: #8ab4f8; /* 調整為清晰的連結顏色 */
+        text-decoration: none;
+      }
+  
+      .resource-grid a:hover {
+        text-decoration: underline;
+      }
+  
+      .dot {
+        display : inline-block;
+        width: 20px;
+        height: 25px;
+        background-color: #0000;
+        border-radius: 50%;
+        text-align: center;
+        color: #888;
+      }
+  
+      .custom-line {
+        display: block;
+      margin-before: 0.5em;
+      margin-after: 0.5em;
+      margin-start: auto;
+      margin-end: auto;
+      border-style: inset;
+      border-width: 1px;
+      }
+  
+      /* 加上簡單的 CSS 讓邊框與間距更美觀 */
+      table {
+      width: 100%;
+      border-collapse: collapse; /* 讓相鄰邊框合併成單一線條 */
+      table-layout: fixed;     /* 關鍵：強制平均分配欄寬，不被內容撐開 */
+      margin: 20px 0;
+      border-collapse: collapse; /* 合併邊框，讓線條更整齊 */
+      }
+      th, td {
+        border: 1px solid #333; /* 設定黑色細邊框 */
+        padding: 10px;          /* 設定文字與邊框的內距 */
+        text-align: left;       /* 文字靠左對齊 */
+        font-size: 12px;
+        word-wrap: break-word;   /* 關鍵：遇到超長英文單字或網址時自動換行，避免超出螢幕 */
+        overflow-wrap: break-word;
+      }
+      th {
+        background-color: #f2f2f2; /* 表頭加上淺灰色底色 */
+        text-align: center;       /* 文字左右（水平）置中 */
+        vertical-align: middle;   /* 文字上下（垂直）置中 */
+      }
+    </style>
+  </head>
 <body>
   <h1 class="main-title">健康資訊網 !!!</h1>
   
